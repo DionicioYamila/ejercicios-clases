@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**int main ()
+{
+    int edad[5];
+    int i;
+
+for(i=0;i<5;i++)
+    {
+       printf("ingrese un valor");
+       scanf("%d", &edad[i]);
+
+    }
+for(i=0;i<5;i++)
+{
+    printf("listado de las edades %d ", edad[i]);
+
+}
+return 0;
+}*/
+
+
+int main ()
+{
+float legajo[5];
+float salario[5];
+int edad[5];
+int i;
+
+for(i=0; i<5; i++)
+{
+    printf("ingrese numero de legajo \n");
+    scanf("%f", &legajo[i]);
+
+}
+
+for(i=0; i<5; i++)
+{
+    printf("ingrese salario \n");
+    scanf("%f", &salario[i]);
+
+}
+
+for(i=0; i<5; i++)
+{
+    printf("ingrese edad \n");
+    scanf("%d", &edad[i]);
+
+}
+
+for(i=0; i<5; i++)
+{
+    printf("su legajo es %f su salario es: %f su edad %d\n" ,legajo[i], salario[i], edad[i] );
+
+
+}
+return 0;
+}
