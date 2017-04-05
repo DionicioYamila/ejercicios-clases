@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define MAX 2
+
+int main()
+{
+int i;
+ char nombre[3][20];
+
+for(i=0; i<MAX; i++)
+{
+   printf("ingrese su nombre: ");
+    fgets(nombre[i],20,stdin);
+
+}
+nombre = strlen(nombre);
+printf("la cantidad de caracteres que tiene es: %d", nombre);// muestra la cantidad de caracteres de la variable
+
+ strcpy(nombre[0], nombre[1]);
+ printf("se ingreso: %s la copia es: %s", nombre[0],nombre[1]); // copia una variable a la otra
+
+  printf("%d", strcmp(nombre[0],nombre[1]));// compara dos o mas variables ya sea mayor o menor.
+
+
+//system("cls");// limpia la pantalla
+
+for(i=0; i<MAX; i++)
+{
+   printf("su nombre es: %s", nombre[i]);
+
+}
+
+/*
+{
+
+
+    printf("ingrese sus nombres \n");
+    fgets(nombre, 20, stdin);
+
+    printf("sus nombres son %s", nombre);
+
+   */
+
+    return 0;
+}
+
+
+
+
